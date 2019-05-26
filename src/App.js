@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import "./Header/Header.css";
+import "./main_images/main-image.css"
+import './sidebar/sidebar.css';
+import './main_section/main-section.css';
+import Header from './Header/Header';
+import MainIamges from './main_images/mainImages';
+import Sidebar_left from './sidebar/sidebar_left';
+import Sidebar_right from './sidebar/sidebar_right';
+import Main_section from './main_section/main_section';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@material/react-material-icon/dist/material-icon.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import BackToTop from "react-back-to-top-button";
+import MaterialIcon from '@material/react-material-icon';
+import { Container, Button, Link } from 'react-floating-action-button';
+var FontAwesome = require('react-fontawesome');
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header></Header>
+     <MainIamges></MainIamges>
+     <div class="row">
+        <Sidebar_left></Sidebar_left>
+        <Main_section></Main_section>
+        <Sidebar_right></Sidebar_right>
+    
+        <BackToTop
+            showAt={100}
+            speed={1500}
+            easing="easeOutSine">
+              <Button
+                  tooltip="برو به بالا"
+                  className="fab-item btn btn-link btn-lg text-white backtoUp"
+                  icon="fas fa-chevron-up"/>
+          </BackToTop>
+     </div>
     </div>
   );
 }

@@ -1,0 +1,101 @@
+.side-right{
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px !important;
+}
+.side-left{
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px !important;
+}
+.sidebar-box-shdow{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.left-side-header{
+    font-size: 12px;
+    text-align: right;
+    padding: 5px;
+    direction: rtl;
+    border-bottom: 1px #4d6faa  solid;
+    border-right: 5px #4d6faa solid;
+    color: #4d6faa;
+}
+.left-side-img{
+    width: 100%;
+    height: 70px;
+    margin-top: 7px;
+}
+.left-side-img-desc{
+    text-align: center;
+    color: #303030;
+    direction: rtl;
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+.right-side-header{
+    font-size: 12px;
+    text-align: right;
+    padding: 5px;
+    direction: rtl;
+    border-bottom: 1px #35b995  solid;
+    border-right: 5px #35b995 solid;
+    color: #35b995;
+}
+.left-side-small-img-head{
+    text-align: right;
+    direction: rtl;
+    color: #303030;
+    direction: rtl;
+    font-size: 10px;
+    border-bottom: 1px #35b995  solid;
+    color: #35b995;
+
+}
+.left-side-small-img-desc{
+    text-align: right;
+    color: #303030;
+    direction: rtl;
+    font-size: 10px;
+    margin-top: 10px;
+
+}
+.left-side-small-img-date{
+    text-align: right;
+    color: #757575;
+    direction: rtl;
+    font-size: 10px;
+    margin-top: 15px;
+}
+.padd{
+    padding: 3px !important;
+}
+.rightside-post-height{
+    height: 130px;
+}
+.right-side-small-img-head{
+    font-size: 9px;
+    padding: 3px 5px;
+    color: #35b995;
+    text-align: right;
+    margin-top: -5px
+}
+.right-side-small-img-head-link:hover{
+    text-decoration: none;
+    color: #35b995;
+}
+.right-side-small-img-desc{
+    text-align: right;
+    color: #303030;
+    direction: rtl;
+    font-size: 10px;
+    margin-top: 20px;
+}
+.right-side-small-img-date{
+    text-align: right;
+    color: #757575;
+    direction: rtl;
+    font-size: 10px;
+    margin-top: 35px;
+}

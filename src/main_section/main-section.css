@@ -1,0 +1,103 @@
+.main-section{
+    height: 100px;
+    padding: 3px !important;
+    box-sizing: border-box;
+}
+.main-section-head-category{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px !important;
+}
+.main-section-head-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px !important;
+}
+.main-section-head-category a{
+    border-radius: 0;
+    font-size: 10px;
+    padding: 9px 13px;
+    color: #fff;
+    background: #35b995;
+    border: 0;
+    display: inline-block;
+    line-height: 1.4;
+    text-align: center;
+    direction: rtl;
+}
+.main-section-head-category a:hover{
+    border-radius: 0;
+    font-size: 10px;
+    padding: 9px 13px;
+    color: #fff;
+    background-color: #4d6faa !important;
+    transition: all 0.3;
+    border: 0;
+    display: inline-block;
+    line-height: 1.4;
+    text-align: center;
+    direction: rtl;
+    text-decoration: none;
+}
+.main-section-head-title a{
+    color: black;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom:3px #35b995 solid;
+}
+.main-section-head-title a:hover{
+    color: black;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom:3px #35b995 solid;
+}
+.image-slideshow{
+    margin-top: 40px;
+}
+.post-description-box{
+    padding: 30px;
+    text-align: center;
+}
+.post-description-box h6{
+    width: 90%;
+    max-width: 90% !important;
+    direction: rtl;
+    margin: auto !important;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    line-height: 2.5em;
+    font-size: 13px;
+}
+.post-description-show-all{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px !important;
+}
+.post-description-show-all a{
+    font-size: 12px;
+    border: 4px double #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    z-index: 1000000;
+    color: #fff;
+    background: #35b995;
+}
+.post-description-show-all a:hover{
+    font-size: 12px;
+    border: 4px double #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    z-index: 1000000;
+    color: #fff;
+    background: #4d6faa;
+    text-decoration: none;
+}
+.post-footer{
+    width: 100%;
+    height: 50px;
+    
+}
