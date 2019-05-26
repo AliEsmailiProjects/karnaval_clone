@@ -32,7 +32,7 @@ function App() {
             speed={1500}
             easing="easeOutSine">
               <Button
-                  tooltip="برو به بالا"
+                  tooltip="برو بالا"
                   className="fab-item btn btn-link btn-lg text-white backtoUp"
                   icon="fas fa-chevron-up"/>
           </BackToTop>
