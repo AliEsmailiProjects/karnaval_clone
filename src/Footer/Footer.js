@@ -1,8 +1,21 @@
 import React , {Component} from 'react';
 import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import MaterialIcon from '@material/react-material-icon';
 
 class Footer extends Component{
+
+    componentDidMount()
+    {
+       
+        fetch('http://karnaval.herokuapp.com/api/expense/title?id=3')
+        .then(response => response.text())
+        .then(data => {
+            alert(data);
+        })
+        .catch((error) => {
+            alert(error)
+        })
+    }
      render()
     {
         return(
@@ -11,7 +24,7 @@ class Footer extends Component{
                 </div>
                 <div class="col-md-3"> 
                     <div class="footer-head-text">
-                        همراه ما باشید
+                        
                     </div>
                     <div>
 
@@ -22,7 +35,7 @@ class Footer extends Component{
                     <div class="newslater">
                         <input type="text" class="to-right newslater-input" placeholder="آدرس ایمیل"></input>
                         <div class="newslater-submit-btn to-left" > 
-                            -
+                        <MaterialIcon icon='keyboard_backspace' className="email-icon"></MaterialIcon>
                         </div>
                     </div>
                     <div>
@@ -33,7 +46,20 @@ class Footer extends Component{
                     سرویس‌های کارناوال
                     </div>
                     <div>
-                    <FontAwesomeIcon icon="check-square" />
+                    <MaterialIcon icon='rss_feed' className="footer-icon"></MaterialIcon> 
+                    <p class="services-txt">بلاگ کارناوال</p>
+
+                    <MaterialIcon icon='play_arrow' className="footer-icon"></MaterialIcon>
+                    <p class="services-txt">ویدیو HD</p>
+                    
+                    <MaterialIcon icon='image' className="footer-icon"></MaterialIcon>
+                    <p class="services-txt">عکاسخانه</p>
+                    
+                    <MaterialIcon icon='wb_sunny' className="footer-icon"></MaterialIcon>
+                    <p class="services-txt">آب و هوا</p>
+                    
+                    <MaterialIcon icon='directions' className="footer-icon"></MaterialIcon>
+                    <p class="services-txt">نقشه و مسیریابی</p>
                     </div>
                 </div>
                 <div class="col-md-3"> 
@@ -70,6 +96,11 @@ class Footer extends Component{
                     </div>
                 </div>
                 <div class="col-md-1"> 
+                </div>
+                <div class="row copyRight-box">
+                    <p class="copyRight-txt">
+                    کلیه حقوق مادی و معنوی برای کارناوال محفوظ است. استفاده از مطالب و تصاویر سایت تنها در صورت پذیرش شرایط و ضوابط کارناوال امکان پذیر است.
+                    </p>
                 </div>
             </div>
         );
