@@ -9,6 +9,7 @@ import MainIamges from './main_images/mainImages';
 import Sidebar_left from './sidebar/sidebar_left';
 import Sidebar_right from './sidebar/sidebar_right';
 import Main_section from './main_section/main_section';
+import Footer from './Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@material/react-material-icon/dist/material-icon.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -21,22 +22,21 @@ function App() {
   return (
     <div className="App">
      <Header></Header>
+     
      <MainIamges></MainIamges>
      <div class="row">
-        <Sidebar_left></Sidebar_left>
+        <Sidebar_left></Sidebar_left> 
         <Main_section></Main_section>
         <Sidebar_right></Sidebar_right>
-    
-        <BackToTop
-            showAt={100}
-            speed={1500}
-            easing="easeOutSine">
+     </div>
+     <div class="row">
+     <Footer></Footer>
+     </div>
+     <BackToTop showAt={100} speed={1500} easing="easeOutSine">
               <Button
-                  tooltip="برو بالا"
                   className="fab-item btn btn-link btn-lg text-white backtoUp"
                   icon="fas fa-chevron-up"/>
-          </BackToTop>
-     </div>
+        </BackToTop>
     </div>
   );
 }

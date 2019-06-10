@@ -1,6 +1,7 @@
 import React , {Component} from 'react';
 import MaterialIcon from '@material/react-material-icon';
 
+
 class Header extends Component{
      render()
     {
@@ -14,7 +15,7 @@ class Header extends Component{
                     <div class="signUp-btn">
                         عضویت   
                     </div>
-                    <MaterialIcon icon='chat_bubble' className="search-icon">1</MaterialIcon>
+                    <MaterialIcon icon='chat_bubble' className="search-icon"></MaterialIcon>
                     </div>
                 </div>
                 <div class="col-md-7">
